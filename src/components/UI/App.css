@@ -1,0 +1,38 @@
+.logo-container {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.glowing-logo {
+  filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.7));
+  transition: all 0.5s ease;
+  transform: translateZ(0);
+}
+
+.logo-container:hover {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+}
+
+.logo-container:hover .glowing-logo {
+  filter: 
+    drop-shadow(0 0 10px rgba(138, 2, 2, 0.8))
+    drop-shadow(0 0 20px rgba(100, 1, 1, 0.4));
+  transform: translateZ(20px);
+}
+
+/* Subtle animation when not hovering */
+@keyframes subtle-float {
+  0% {
+    transform: translateZ(0) translateY(0);
+  }
+  50% {
+    transform: translateZ(0) translateY(0);
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+  }
+}
+
+.logo-container {
+  animation: subtle-float 6s ease-in-out infinite;
+}
