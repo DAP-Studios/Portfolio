@@ -1,14 +1,15 @@
 /* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Blood Red & Black Theme */
 @layer base {
   :root {
-    --color-primary: 136 19 19;  /* Blood Red */
-    --color-secondary: 0 0 0;    /* Pure Black */
-    --color-accent: 239 68 68;   /* Brighter Red for accents */
+    --color-primary: 34 211 238;
+    --color-secondary: 0 0 0;
+    --color-accent: 125 211 252;
   }
 
   html {
@@ -16,7 +17,19 @@
   }
 
   body {
-    @apply bg-black text-gray-100;
+    @apply bg-black text-gray-100 antialiased;
+    font-family: 'Sora', sans-serif;
+    background-image: radial-gradient(circle at 20% 15%, rgba(125, 211, 252, 0.08), transparent 28%), radial-gradient(circle at 80% 75%, rgba(34, 211, 238, 0.08), transparent 30%);
+    background-attachment: fixed;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.65) 100%);
   }
 
   /* Custom Scrollbar */
@@ -29,28 +42,23 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-[rgb(var(--color-primary))]/50 rounded-full;
+    @apply rounded-full bg-[rgb(var(--color-primary))]/55;
+    border: 2px solid rgba(0, 0, 0, 0.8);
   }
 
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-[rgb(var(--color-primary))];
   }
 
-  /* Custom Typography */
   h1, h2, h3, h4 {
-    @apply font-bold text-white;
-  }
-
-  h1 {
-    @apply text-4xl md:text-6xl;
+    font-family: 'Space Grotesk', sans-serif;
+    @apply font-semibold text-white;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl;
     @apply bg-gradient-to-r from-[rgb(var(--color-primary))] to-[rgb(var(--color-accent))] bg-clip-text text-transparent;
   }
 
-  /* Custom Components */
   .card {
     @apply bg-gray-900/80 border border-[rgb(var(--color-primary))]/20 backdrop-blur-sm;
     @apply hover:border-[rgb(var(--color-primary))]/50 transition-all duration-300;
@@ -62,7 +70,6 @@
   }
 }
 
-/* Animation Effects */
 @layer utilities {
   .text-shadow {
     text-shadow: 2px 2px 4px rgba(var(--color-primary), 0.5);

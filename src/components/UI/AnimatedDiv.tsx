@@ -17,9 +17,9 @@ export const AnimatedDiv = ({
 }: AnimatedDivProps) => {
   const variants = {
     fade: { initial: { opacity: 0 }, animate: { opacity: 1 } },
-    slideUp: { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 } },
-    slideLeft: { initial: { opacity: 0, x: -50 }, animate: { opacity: 1, x: 0 } },
-    slideRight: { initial: { opacity: 0, x: 50 }, animate: { opacity: 1, x: 0 } },
+    slideUp: { initial: { opacity: 0, y: 28 }, animate: { opacity: 1, y: 0 } },
+    slideLeft: { initial: { opacity: 0, x: -42 }, animate: { opacity: 1, x: 0 } },
+    slideRight: { initial: { opacity: 0, x: 42 }, animate: { opacity: 1, x: 0 } },
     scale: { initial: { opacity: 0, scale: 0.9 }, animate: { opacity: 1, scale: 1 } }
   };
 
@@ -27,8 +27,8 @@ export const AnimatedDiv = ({
     <motion.div
       initial={variants[type].initial}
       whileInView={variants[type].animate}
-      viewport={{ once: true }}
-      transition={{ delay, duration: 0.8 }}
+      viewport={{ once: true, amount: 0.28 }}
+      transition={{ delay, duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}
