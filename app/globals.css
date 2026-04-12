@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-calligraphy: var(--font-calligraphy);
+  --font-serif: var(--font-serif);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .bg-mesh {
+    background-color: #050505;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(139, 0, 0, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(30, 58, 138, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(139, 0, 0, 0.15) 0px, transparent 50%);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
