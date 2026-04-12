@@ -1,6 +1,7 @@
 // App.tsx
 import { motion, useScroll, useSpring } from 'framer-motion';
 import { HomeAnimation } from './components/UI/Home.tsx';
+import { GhostCursor } from './components/UI/GhostCursor.tsx';
 import { Hero } from './components/Hero.tsx';
 import { ProjectShowcase } from './components/ProjectShowcase.tsx';
 import { 
@@ -30,7 +31,8 @@ function App() {
   });
 
   return (
-    <div className="min-h-screen bg-black text-white selection:bg-cyan-300/20 selection:text-cyan-50">
+    <div className="min-h-screen bg-black text-white selection:bg-cyan-300/20 selection:text-cyan-50 cursor-none">
+      <GhostCursor />
       <motion.div
         className="fixed left-0 right-0 top-0 z-[80] h-1 origin-left bg-gradient-to-r from-cyan-300 via-blue-300 to-cyan-200"
         style={{ scaleX }}
