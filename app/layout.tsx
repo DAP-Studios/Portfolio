@@ -26,7 +26,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: 'DAP Studios | DAP Tech Sol | Deep Parmar',
+  title: 'Deep A Parmar',
   description: 'Portfolio for DAP Studios, DAP Tech Sol, and Deep Parmar. Providing innovative tech and design solutions for Surat, Gujarat, Vadodara, Vapi, and the world.',
   keywords: ['DAP Studios', 'Dap Tech Sol', 'Deep Parmar', 'Surat', 'Gujarat', 'Vadodara', 'Vapi', 'Creative Studio', 'Tech Solutions', 'Web Development'],
   icons: {

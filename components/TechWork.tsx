@@ -7,7 +7,7 @@ import { useRef } from 'react';
 const techProjects = [
   { 
     title: 'VK Automation', 
-    type: 'Industrial Tech', 
+    //type: 'Industrial Tech', 
     tech: ['React', 'Next.js', 'Tailwind'], 
     desc: 'Digital presence and corporate platform for an industrial automation and control systems provider.',
     link: 'https://vkautomationandcontrol.in',
@@ -15,15 +15,15 @@ const techProjects = [
   },
   { 
     title: 'Uma Sensor', 
-    type: 'B2B Platform', 
+    //type: 'B2B Platform', 
     tech: ['Next.js', 'Node.js', 'PostgreSQL'], 
     desc: 'Comprehensive product catalog and corporate web infrastructure for a sensor manufacturing company.',
     link: 'https://umasensor.co.in',
-    preview: 'https://api.microlink.io/?url=https%3A%2F%2Fumasensor.co.in&screenshot=true&meta=false&embed=screenshot.url'
+    preview: 'https://api.microlink.io/?url=https%3A%2F%2Fumasensor.co.in&screenshot=true&meta=false&embed=screenshot.url&prerender=true'
   },
   { 
     title: 'Sunrise System', 
-    type: 'Corporate Portal', 
+    //type: 'Corporate Portal', 
     tech: ['React', 'Tailwind', 'Framer Motion'], 
     desc: 'Modern web architecture showcasing system integration, automation, and technical services.',
     link: 'https://sunrisesystem.co.in',
@@ -31,15 +31,15 @@ const techProjects = [
   },
   { 
     title: 'Atreya IOR', 
-    type: 'Web Platform', 
+    //type: 'Web Platform', 
     tech: ['Vue.js', 'Express', 'MongoDB'], 
     desc: 'Interactive digital platform for research operations, institutional resources, and data management.',
     link: 'https://atreyaior.in',
-    preview: 'https://api.microlink.io/?url=https%3A%2F%2Fatreyaior.in&screenshot=true&meta=false&embed=screenshot.url'
+    preview: 'https://api.microlink.io/?url=https%3A%2F%2Fatreyaior.in&screenshot=true&meta=false&embed=screenshot.url&prerender=true'
   },
   { 
     title: 'Millennium Auto', 
-    type: 'E-Commerce / B2B', 
+    //type: 'E-Commerce / B2B', 
     tech: ['Next.js', 'Stripe', 'Tailwind'], 
     desc: 'Scalable digital platform for advanced automation systems and industrial components.',
     link: 'https://millenniumautomationsystem.com',
@@ -47,7 +47,7 @@ const techProjects = [
   },
   { 
     title: 'Creative Infra', 
-    type: 'Portfolio & Corp', 
+    //type: 'Portfolio & Corp', 
     tech: ['React', 'Three.js', 'GSAP'], 
     desc: 'Immersive portfolio showcasing modern infrastructure, construction projects, and engineering feats.',
     link: 'https://creativeinfra.me',
