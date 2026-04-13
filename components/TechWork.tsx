@@ -109,7 +109,6 @@ export default function TechWork() {
                   
                   <div>
                     <div className="flex justify-between items-start mb-4">
-                      <span className="text-[10px] font-bold tracking-widest uppercase text-blue-400">{project.type}</span>
                       <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-white transition-colors z-30 relative" title="View Live Site">
                         <ExternalLink size={20} />
                       </a>
